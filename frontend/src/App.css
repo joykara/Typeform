@@ -1,42 +1,55 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  list-style: none;
+  background: none;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+h1{
+  font-size: clamp(2.5rem, 3vw, 4rem);
+  font-weight: 700;
+  font-family: var(--font-family);
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+h2{
+  font-size: clamp(1.8rem, 2vw, 2.5rem);
+  font-weight: 700;
+  font-family: var(--font-family);
 }
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h3{
+  font-size: clamp(1.5rem, 2vw, 2rem);
+  font-weight: 600;
+  font-family: var(--font-family);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+h4{
+  font-size: 20px;
+  font-weight: 700;
+  font-family: var(--font-family);
 }
-
-.card {
-  padding: 2em;
+a{
+  font-size: clamp(1rem, 1.2vw, 1.2rem);
+  font-family: var(--font-family);
+  color: #461186;
 }
-
-.read-the-docs {
-  color: #888;
+a:hover {
+  color: var(--color-secondary);
+}
+p{
+  font-family: var(--font-family);
+  line-height: 28px;
+  font-size: clamp(1rem, 1.2vw, 1.2rem);
+  font-weight: 300;
+}
+.scale-up:hover{
+  cursor: pointer;
+  box-shadow: 0px 16px 32px -1px rgba(5,28,44,.2),0px 0px 1px 0px rgba(5,28,44,.15);
+  transition: all 1s ease-in-out;
 }
